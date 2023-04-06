@@ -8,7 +8,7 @@
 
 
 h3{
-  font-size: 3em;
+  font-size: 32px;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -20,8 +20,166 @@ h3{
   }
 }
 
+/* intro3 */
+#intro3{
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+#intro3 .intro3_cont h3{
+margin-bottom: 80px;
+}
+
+#intro3 .intro3_cont .int3_cont_area .int3_con{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#intro3 .intro3_cont .int3_cont_area .int3_con .int3_txt{
+  width: 50%;
+  position: relative;
+  padding: 5% 0;
+}
+
+#intro3 .intro3_cont .int3_cont_area .int3_con .int3_txt::after{
+  content:'';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:#eee;
+}
+
+#intro3 .intro3_cont .int3_cont_area .int3_con .int3_txt dl{
+  margin-bottom: 5%;
+  line-height: 2;
+}
+
+#intro3 .intro3_cont .int3_cont_area .int3_con .int3_txt dl:last-child{
+  margin-bottom: 0;
+}
+
+#intro3 .intro3_cont .int3_cont_area .int3_con .int3_txt dl dt{
+  color: #EE7B89;
+}
+
+#intro3 .intro3_cont .int3_cont_area .int3_con .int3_img{
+  width: 50%;
+}
+
+#intro3 .intro3_cont .int3_cont_area .int3_con .int3_img img{
+  max-width: 100%;
+}
 
 
+/* coin */
+
+#coin{
+  padding: 100px 0;
+  position: relative;
+}
+
+#coin::before{
+  content: "";
+  display: block;
+  background-color: #1F1F26;
+  width: 88.4%;
+  height:96%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0px 255px 0px 0px;
+}
+
+#coin .coin_area {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+#coin .coin_area .coin_right{
+  width: 50%;
+}
+
+#coin .coin_area .coin_right h3{
+  margin-bottom: 8%;
+}
+
+#coin .coin_area .coin_right article{
+  line-height: 1.5;
+  margin-bottom: 3%;
+}
+
+#coin .coin_area .coin_right ul li{
+  line-height: 2;
+}
+
+#coin .coin_area .coin_left{
+  width: 50%;
+}
+
+#coin .coin_area .coin_left img{
+  max-width: 100%;
+}
+
+/* roadmap */
+#roadmap{
+  padding: 100px 0;
+}
+
+#roadmap .road_area h3{
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#roadmap .road_area .road_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#roadmap .road_area .road_box article{
+  border-radius: 54px;
+  width: 461px;
+  height: 442px;
+  background:url(../img/road_con_bg.jpeg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  transition: all .5s;
+}
+
+#roadmap .road_area .road_box article:nth-child(2){
+  background-position: left;
+}
+
+#roadmap .road_area .road_box article:nth-child(3){
+  background-position: right;
+}
+#roadmap .road_area .road_box article:hover{
+  margin-top: -2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all .5s;
+}
+
+#roadmap .road_area .road_box article .txt_box{
+  box-sizing: border-box;
+  background: #fff;
+  width: 90%;
+  height:90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 54px;
+  padding: 10% 8%;
+}
+
+#roadmap .road_area .road_box article .txt_box ul{
+  line-height: 3;
+}
 
 
-/*헤더*/
