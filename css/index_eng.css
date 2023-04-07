@@ -1,5 +1,17 @@
+#intro3 .intro3_cont p{
+  line-height: 2;
+}
+#roadmap .road_area .road_box article .txt_box {
+  overflow: scroll;
+}
 
+#roadmap .road_area .road_box article .txt_box::-webkit-scrollbar {
+  display: none;
+}
 
+#roadmap .road_area .road_box article:nth-child(2),#roadmap .road_area .road_box article:nth-child(3){
+  cursor: url(../img/scrollcursor.png), auto;
+}
     
 /*데탑*/
 @media screen and (max-width:1440px) {
