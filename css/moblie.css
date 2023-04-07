@@ -5,7 +5,18 @@
   #roadmap .road_area .road_box article {
     border-radius: 54px;
     width: 30%;
-    height: 500px;
+  }
+
+  #roadmap .road_area .road_box article .txt_box {
+    overflow: scroll;
+  }
+  
+  #roadmap .road_area .road_box article .txt_box::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #roadmap .road_area .road_box article:nth-child(2),#roadmap .road_area .road_box article:nth-child(3){
+    cursor: url(../img/scrollcursor.png), auto;
   }
 }
 
@@ -76,9 +87,7 @@
 }
 
 #roadmap .road_area .road_box article {
-  border-radius: 54px;
   width: 100%;
-  height: 450px;
 }
 #roadmap .road_area .road_box article:nth-child(2){
   margin: 5% auto;

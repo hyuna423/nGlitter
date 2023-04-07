@@ -89,10 +89,13 @@ br.mob{
 
 #intro3 .intro3_cont .int3_cont_area .int3_con .int3_img {
   width: 50%;
+
 }
 
 #intro3 .intro3_cont .int3_cont_area .int3_con .int3_img img {
   max-width: 100%;
+  display: flex;
+  margin: 0 auto;
 }
 
 
@@ -107,7 +110,7 @@ br.mob{
   content: "";
   display: block;
   background-color: #1F1F26;
-  width: 88.4%;
+  width: 90%;
   height: 96%;
   position: absolute;
   bottom: 0;
@@ -141,11 +144,13 @@ br.mob{
 }
 
 #coin .coin_area .coin_left {
-  width: 50%;
+  width: 50%;  
 }
 
 #coin .coin_area .coin_left img {
   max-width: 90%;
+  display: flex;
+  margin: 0 auto;
 }
 
 /* roadmap */
