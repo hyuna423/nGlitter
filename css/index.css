@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'EF_watermelonSalad';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_watermelonSalad.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +25,7 @@ address {
 }
 
 body {
+  font-family: 'EF_watermelonSalad';
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -135,8 +144,9 @@ br.mob{
 }
 
 #coin .coin_area .coin_right article {
-  line-height: 1.5;
+  line-height: 1.8;
   margin-bottom: 3%;
+  font-weight: 600;
 }
 
 #coin .coin_area .coin_right ul li {
