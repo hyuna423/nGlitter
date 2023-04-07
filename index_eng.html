@@ -41,23 +41,24 @@
 
   <header>
 
-    <div class="">
+    <div class="hd_all">
 
       <hgroup>
 
-        <h1><img src="img/" alt="logo"></h1>
+        <a href="#home"><h1><img src="img/nGlitter_logo.png" alt="logo"></h1></a>
 
       </hgroup>
 
 
-      <nav class="">
-        <ul>
+      <nav class="pc_menu">
+        <ul class="menu_style">
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#intro" class="scroll">About</a></li>
+          <li><a href="#coin" class="scroll">nGlitter Coin</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+          <li class="lang"><a href="index.html" class="scroll"><img src="img/langiconKo.png" alt="langiconKo"></a></li>
 
         </ul>
       </nav>
@@ -65,21 +66,38 @@
 
       <!--반응형-->
 
-      <div class="">
+      <div class="m_menu_button">
 
-        <img src="img/" alt="menu_button">
+        <a href="#" class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
 
       </div>
 
-      <nav class="">
+       <!--반응형 js-->
+       <script type="text/javascript">
 
-        <ul>
+        $(function () {
+          $(".menu-trigger").click(function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active-' + 1);
+          });
+        });
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+      </script>
+
+      <nav class="m_menu">
+
+        <ul class="menu_style">
+
+         <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#intro" class="scroll">About</a></li>
+          <li><a href="#coin" class="scroll">nGlitter Coin</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+          <li class="lang"><a href="index.html" class="scroll"><img src="img/langiconKo.png" alt="langiconKo"></a></li>
 
         </ul>
 
@@ -88,8 +106,8 @@
       <!--반응형 js-->
       <script type="text/javascript">
         $(function () {
-          $("").click(function () {
-            $("").animate({ width: "toggle" }, 250);
+          $(".m_menu_button").click(function () {
+            $(".m_menu").animate({ height: "toggle" }, 250);
           });
         });
 
@@ -100,7 +118,83 @@
   </header>
 
   <main>
+    <section id="home">
 
+      <div class="main_video">
+        <video autoplay muted loop playsinline>
+          <source src="vid/main_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="home_wrap">
+        <div class="home_content container">
+
+          <div class="home_txt">
+            <h2 data-aos="fade-right" data-aos-duration="1000">nGlitter</h2> <br>
+            
+            <h4 data-aos="fade-right" data-aos-duration="1500">Blockchain, Changes Practices of <br class="home_br">International Jewelry Trading Forever</h4> <br><br>
+            
+            <p data-aos="fade-right" data-aos-duration="2000">
+              Jewelry market that used to be traded in kind.<br>
+              Jewelry market that was not trusted due to loss, imitation, etc.<br>
+              Creating trust in a new era through NFT technology,<br>
+              Creating a new market that didn't exist
+            </p>
+
+            <div class="home_btn">
+              <a href="">Whitepaper</a>
+              <a href="">Wallet</a>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section id="intro">
+      <div class="intro1_wrap container">
+        <h3 data-aos="fade-down" data-aos-duration="1500">INTRODUCTION</h3>
+
+        <p data-aos="fade-right" data-aos-duration="1500">
+          Jewelry that used to trade only in kind, now trades as NFTs over the Internet.<br>
+          Founded to preoccupy the jewelry-specialized <br class="intro_br"> NFT business platform market by pursuing projects<br>
+          that fit this trend, nGlitter has a compound name of <br class="intro_br2">NFT (NFT) + Glitter (gems sparkle).<br>
+        </p>
+      </div>
+    </section>
+
+
+
+
+    <section id="intro2">
+      <div class="intro2_wrap container">
+
+        <h3 data-aos="fade-down" data-aos-duration="1500">nGlitter Blockchain Systems</h3>
+
+        <div class="intro2_content">
+          <div class="intro2_content_left" data-aos="fade-right" data-aos-duration="1500">
+            <img src="img/intro2.png" alt="intro2_img">
+          </div>
+
+          <div class="intro2_content_right" data-aos="fade-right" data-aos-duration="2000">
+            <h5>Blockchain Transparency, <br>
+              Efficiency Change the Game Of The Jewelry Industry Forever</h5>
+
+            <p>
+              ERC20, one of Ethereum's core technology protocols,  <br>
+              is an international technology protocol that has already delivered<br>
+              technical services to tens of thousands of companies and platforms<br>
+              around the world, and is using it to design nGlitter's service platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   
   <footer>
@@ -110,6 +204,8 @@
   <script>
     AOS.init();
   </script>
+
+  <script src="js/header.js"></script>
 
 </body>
 

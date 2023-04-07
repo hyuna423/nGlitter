@@ -1,5 +1,22 @@
 
 
+#intro2{
+  background: linear-gradient(#1F1F26 58%, #ffffff 10%);
+}
+
+#intro2 .intro2_wrap .intro2_content .intro2_content_right{
+  margin-top: 4%;
+}
+
+
+#intro2 .intro2_wrap .intro2_content .intro2_content_right h5{
+  font-size: 1.1em;
+}
+
+#intro2 .intro2_wrap .intro2_content .intro2_content_right p{
+  font-size: 0.9em;
+}
+
     
 /*데탑*/
 @media screen and (max-width:1440px) {
@@ -15,6 +32,18 @@
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    .home_br{
+      display: block;
+    }
+
+    #intro2 .intro2_wrap .intro2_content .intro2_content_right{
+      margin-top: 6%;
+    }
+
+    #intro2{
+      background: linear-gradient(#1F1F26 77%, #ffffff 10%);
+    }
+
 }
 
 
@@ -22,6 +51,17 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+  #intro .intro1_wrap p br{
+    display: none;
+  }
+
+  #intro2{
+    background: linear-gradient(#1F1F26 75.5%, #ffffff 10%);
+  }
+
+  #intro2 .intro2_wrap .intro2_content .intro2_content_right{
+    margin-top: 10%;
+  }
 
 }
 
@@ -30,7 +70,18 @@
 
 
 @media screen and (max-width:576px) {
+  .home_wrap .home_content .home_txt p br{
+    display: none;
+  }
 
+  #intro2{
+    background: linear-gradient(#1F1F26 72.5%, #ffffff 10%);
+  }
+
+
+  #intro2 .intro2_wrap .intro2_content .intro2_content_right h5 br{
+    display: none;
+  }
 }
 
 

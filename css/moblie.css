@@ -7,27 +7,273 @@
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+
+    /*header*/
+
+    hgroup a h1 img{
+      max-width: 20%;
+    }
+
+    .pc_menu{
+      width: 55%;
+    }
+
+    .pc_menu ul li.lang{
+      padding: 1%;
+    }
+
+
+    /*home*/
+
+    #home{
+      height: 900px;
+    }
+
+    .home_wrap{
+      top: 50%;
+      text-align: center;
+    }
+
+    .home_wrap .home_content .home_txt .home_btn{
+      margin-top: 4%;
+    }
+
+    .home_wrap .home_content .home_txt .home_btn a{
+      width: 20%;
+      padding: 1.5% 4%;
+    }
+
+
+    /*intro*/
+
+    #intro .intro1_wrap p::before{
+      left: 17%;
+    }
+
+    #intro .intro1_wrap p::after{
+      right: 12%;
+    }
+
+
+    /*intro2*/
+
+    #intro2 .intro2_wrap .intro2_content .intro2_content_left{
+      width: 45%;
+      padding: 3%;
+    }
+
+    #intro2 .intro2_wrap .intro2_content .intro2_content_right{
+      width: 52%;
+    }
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
-}
+
+    /*header*/
+
+
+    hgroup a h1 img{
+      max-width: 30%;
+    }
+
+    .pc_menu{
+      display: none;
+    }
+
+    .m_menu_button{
+      display: block;
+    }
+    
+    /*home*/
+
+    
+    .home_wrap .home_content .home_txt .home_btn{
+      margin-top: 5%;
+    }
+
+
+    .home_wrap .home_content .home_txt .home_btn a{
+      width: 30%;
+      padding: 1.8% 4%;
+    }
+
+
+
+    /*intro*/
+
+    .intro_br{
+      display: block;
+    }
+
+    #intro .intro1_wrap p::before{
+      left: 7%;
+    }
+
+    #intro .intro1_wrap p::after{
+      right: 1%;
+    }
+
+
+
+    /*intro2*/
+
+    #intro2{
+      background: linear-gradient(#1F1F26 77%, #ffffff 10%);
+    }
+
+    #intro2 .intro2_wrap .intro2_content{
+      flex-direction: column;
+      margin-top: 10%;
+    }
+
+    #intro2 .intro2_wrap .intro2_content .intro2_content_left{
+      width: 100%;
+    }
+
+    #intro2 .intro2_wrap .intro2_content .intro2_content_right{
+      width: 100%;
+      text-align: center;
+      margin-top: 10%;
+    }
+    
+  }
+
+
+
+
 
 
 
 /*모바일*/
 
 @media screen and (max-width:767px) {
+  
+  /*header*/
+
+  hgroup a h1 img{
+    max-width: 35%;
+  }
+
+  /*home*/
+
+  .home_wrap .home_content .home_txt .home_btn{
+    margin-top: 6%;
+  }
+
+  .home_wrap .home_content .home_txt .home_btn a{
+    width: 40%;
+    padding: 2.7% 4%;
+  }
+
+
+  /*intro*/
+
+  .intro_br2{
+    display: block;
+  }
+
+  #intro .intro1_wrap p::before{
+    left: -8%;
+  }
+
+  #intro .intro1_wrap p::after{
+    bottom: -5%;
+  }
+
+
+
+  /*intro2*/
+
+  #intro2{
+    background:linear-gradient(#1F1F26 75%, #ffffff 10%);
+  }
+
+  #intro2 .intro2_wrap .intro2_content .intro2_content_left{
+    padding: 2%;
+  }
+
 
 }
+
+
+
 
 
 /*모바일2*/
 
 
 @media screen and (max-width:576px) {
+
+
+  /*header*/
+  
+
+  .hd_all{
+    padding: 0 30px;
+  }
+
+  hgroup a h1 img{
+    max-width: 47%;
+  }
+
+  .m_menu_button{
+    right: 30px;
+  }
+
+  .m_menu ul{
+    padding: 20%;
+  }
+
+  .m_menu ul li{
+    margin-bottom: 30%;
+  }
+
+  /*home*/
+  
+.home_br{
+  display: block;
+}
+
+.home_wrap .home_content{
+  padding: 13% 0 5%;
+}
+
+.home_wrap .home_content .home_txt .home_btn a{
+  padding: 4%;
+}
+
+/*intro*/
+
+#intro .intro1_wrap p br{
+  display: none;
+}
+
+#intro .intro1_wrap p::before{
+  left: 0%;
+}
+
+
+/*intro2*/
+
+#intro2{
+  background:linear-gradient(#1F1F26 71.5%, #ffffff 10%);
+}
+
+#intro2 .intro2_wrap .intro2_content .intro2_content_left{
+  padding: 0%;
+}
+
+#intro2 .intro2_wrap .intro2_content .intro2_content_right h5{
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+#intro2 .intro2_wrap .intro2_content .intro2_content_right p br{
+  display: none;
+}
 
 }
 
@@ -36,6 +282,21 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
+
+    /*intro2*/
+
+    #intro2{
+      background:linear-gradient(#1F1F26 72.5%, #ffffff 10%);
+    }
+
+    #intro2 .intro2_wrap .intro2_content .intro2_content_right h5{
+      font-size: 1em;
+      font-weight: 600;
+    }
+
+    #intro2 .intro2_wrap .intro2_content .intro2_content_right p{
+      font-size: 0.9em;
+    }
 
 }
 
