@@ -66,6 +66,22 @@ hgroup a h1 img{
   max-width: 10%;
 }
 
+hgroup a h1.menu_style img:hover{
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.2) 30%, #000 50%, rgba(0,0,0,.2) 70%);
+  -webkit-mask-size: 200%;
+  animation: Shine 1.5s infinite;
+  transition: all 0.1s;
+}
+
+@-webkit-keyframes Shine{
+  from{
+    -webkit-mask-position: 150%;
+  }
+  to{
+    -webkit-mask-position:-50%;
+  }
+}
+
 .pc_menu{
   width: 50%;
 }
