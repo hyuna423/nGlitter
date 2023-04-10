@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>앤글리터 | nGlitter</title>
+  <title>엔글리터 | nGlitter</title>
 
   <!--meta-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
@@ -39,7 +39,170 @@
 
 
 
+  <header>
+
+    <div class="hd_all">
+
+      <hgroup>
+
+        <a href="#home">
+          <h1 class="menu_style">
+            <img src="img/nGlitter_logo.png" alt="logo">
+          </h1>
+        </a>
+
+      </hgroup>
+
+
+      <nav class="pc_menu">
+        <ul class="menu_style">
+
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#intro" class="scroll">About</a></li>
+          <li><a href="#coin" class="scroll">nGlitter Coin</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+          <li class="lang"><a href="index_eng.html" class="scroll"><img src="img/langiconEN.png" alt="langiconKo"></a></li>
+
+        </ul>
+      </nav>
+
+
+      <!--반응형-->
+
+      <div class="m_menu_button">
+
+        <a href="#" class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+      </div>
+
+       <!--반응형 js-->
+       <script type="text/javascript">
+
+        $(function () {
+          $(".menu-trigger").click(function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active-' + 1);
+          });
+        });
+
+      </script>
+
+      <nav class="m_menu">
+
+        <ul class="menu_style">
+
+         <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#intro" class="scroll">About</a></li>
+          <li><a href="#coin" class="scroll">nGlitter Coin</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+          <li class="lang"><a href="index_eng.html" class="scroll"><img src="img/langiconEN.png" alt="langiconKo"></a></li>
+
+        </ul>
+
+      </nav>
+
+      <!--반응형 js-->
+      <script type="text/javascript">
+        $(function () {
+          $(".m_menu_button").click(function () {
+            $(".m_menu").animate({ height: "toggle" }, 250);
+          });
+        });
+
+      </script>
+
+    </div>
+
+  </header>
+
   <main>
+    <section id="home">
+
+      <div class="main_video">
+        <video autoplay muted loop playsinline>
+          <source src="vid/main_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="home_wrap">
+        <div class="home_content container">
+
+          <div class="home_txt">
+            <h2 class="tracking-in-expand" data-aos="fade-right" data-aos-duration="1000">nGlitter</h2> <br>
+            
+            <h4 data-aos="fade-right" data-aos-duration="1500">블록체인, 국제 보석 거래의 <br class="home_br"> 관행을 영원히 바꾸다</h4> <br><br>
+            
+            <p data-aos="fade-right" data-aos-duration="2000">
+              현물로만 거래되던 보석시장. <br>
+              분실, 모조품등으로 인해 신뢰가 없던 보석 시장 <br>
+              NFT기술을 통해 새로운 시대의 신뢰를 만들고, <br>
+              존재하지 않던 새로운 시장을 만듭니다
+            </p>
+
+            <div class="home_btn">
+              <a href="">Whitepaper</a>
+              <a href="">Wallet</a>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section id="intro">
+      <div class="intro1_wrap container">
+        <h3 data-aos="fade-down" data-aos-duration="1500">INTRODUCTION</h3>
+
+        <p data-aos="fade-right" data-aos-duration="1500">
+          현물로만 거래되던 보석, 이제는 인터넷을 통해 NFT로 거래됩니다. <br>
+          이러한 시대적 흐름에 맞는 사업을 추진하여 보석 전문 <br class="intro_br"> NFT비지니스 플랫폼시장을 선점하고자 설립된 엔글리터는 <br>
+          그 이름이 NFT(엔에프티)+Glitter(보석이 반짝이다)의 <br class="intro_br2"> 합성어를 가지고 있습니다. <br>
+        </p>
+      </div>
+    </section>
+
+
+
+
+    <section id="intro2">
+      <div class="intro2_wrap container">
+
+        <h3 data-aos="fade-down" data-aos-duration="1500">nGlitter Blockchain Systems</h3>
+
+        <div class="intro2_content" data-aos="fade-right" data-aos-duration="1500">
+          <div class="intro2_content_left">
+            <img class="intro2_web" src="img/intro2.png" alt="intro2_img">
+            <img class="intro2_mo" src="img/intro2_m.png" alt="intro2_mob">
+          </div>
+
+          <div class="intro2_content_right">
+            <h5>블록체인의 투명성, <br>
+              효율성은 보석 산업의 판도를 영원히 바꿉니다.</h5>
+
+            <p>
+              이더리움의 핵심 기술 프로토콜 중 하나인 ERC20. 전세계 수 만 <br>
+              곳의 기업과 플랫폼에 기술적인 서비스를 이미 제공 하고 있어 그 <br>
+              안전성과 효율성이 널리 검증된 국제적인 기술 프로토콜이며 이를 <br>
+               이용하여 엔글리터의 서비스 플랫폼을 설계 하고 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
     <section id="intro3">
 
       <div class="intro3_cont container">
@@ -177,14 +340,15 @@
         <li>운영사 :</li>
         <li>입금계좌예금주 :</li>
         <li>주소 :</li>
-        <li>고객센터 : <span>월~금 10am~5pm시. 점심12~2pm</span></li>
-        <li>고객센터 : <span>월~금 10am~5pm시. 점심12~2pm</span></li>
+        <li>고객센터 : <span>(월~금 10am~5pm시. 점심12~2pm)</span></li>
       </ul>
+
       <div class="white_pp">
         <h4>Whitepaper</h4>
         <button type="button" onclick="location.href='nGlitter-whitepaper-Ko.pdf' ">WhitePaper_Kor</button>
         <button type="button" onclick="location.href='nGlitter-whitepaper-Eng.pdf' ">WhitePaper_Eng</button>
       </div>
+
       <div class="sns">
         <h4>Community</h4>
         <button type="button" onclick="location.href='' "><i class="xi-telegram"></i></button>
@@ -198,6 +362,7 @@
   <script>
     AOS.init();
   </script>
+<script src="js/header.js"></script>
 
 
 </body>

@@ -1,6 +1,28 @@
+
+#intro2{
+  background: linear-gradient(#1F1F26 58%, #ffffff 10%);
+}
+
+#intro2 .intro2_wrap .intro2_content .intro2_content_right{
+  margin-top: 4%;
+}
+
+
+#intro2 .intro2_wrap .intro2_content .intro2_content_right h5{
+  font-size: 1.1em;
+}
+
+#intro2 .intro2_wrap .intro2_content .intro2_content_right p{
+  font-size: 0.9em;
+}
+
+
+
 #intro3 .intro3_cont p{
   line-height: 2;
 }
+
+
 #roadmap .road_area .road_box article .txt_box {
   overflow: scroll;
 }
@@ -27,6 +49,18 @@
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+
+    .home_br{
+      display: block;
+    }
+
+    #intro2 .intro2_wrap .intro2_content .intro2_content_right{
+      margin-top: 6%;
+    }
+
+    #intro2{
+      background: linear-gradient(#1F1F26 77%, #ffffff 10%);
+    }
 }
 
 
@@ -34,6 +68,18 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+
+  #intro .intro1_wrap p br{
+    display: none;
+  }
+
+  #intro2{
+    background: linear-gradient(#1F1F26 73.5%, #ffffff 10%);
+  }
+
+  #intro2 .intro2_wrap .intro2_content .intro2_content_right{
+    margin-top: 10%;
+  }
 
 }
 
@@ -43,6 +89,18 @@
 
 @media screen and (max-width:576px) {
 
+  .home_wrap .home_content .home_txt p br{
+    display: none;
+  }
+
+  #intro2 {
+    background: linear-gradient(#1F1F26 81.5%, #ffffff 10%);
+}
+
+  #intro2 .intro2_wrap .intro2_content .intro2_content_right h5 br{
+    display: none;
+  }
+
 }
 
 
@@ -50,6 +108,9 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
+    #intro2 {
+      background: linear-gradient(#1F1F26 80%, #ffffff 10%);
+  }
 
 }
 
@@ -57,5 +118,8 @@
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
+      #intro2 {
+        background: linear-gradient(#1F1F26 78.5%, #ffffff 10%);
+    }
 
 }
