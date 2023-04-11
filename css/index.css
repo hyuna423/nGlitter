@@ -29,6 +29,7 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  user-select: none;
   overflow-x: hidden;
 }
 
@@ -68,7 +69,7 @@ header{
 
 .hd_all {
   width: 90%;
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,12 +102,23 @@ hgroup a h1 img{
 
 hgroup a h1.menu_style img:hover{
   -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.2) 30%, #000 50%, rgba(0,0,0,.2) 70%);
+  mask-image :linear-gradient(-75deg, rgba(0,0,0,.2) 30%, #000 50%, rgba(0,0,0,.2) 70%);
   -webkit-mask-size: 200%;
+  mask-size: 200%;
   animation: Shine 1.5s infinite;
   transition: all 0.1s;
 }
 
 @-webkit-keyframes Shine{
+  from{
+    -webkit-mask-position: 150%;
+  }
+  to{
+    -webkit-mask-position:-50%;
+  }
+}
+
+@keyframes Shine{
   from{
     -webkit-mask-position: 150%;
   }
@@ -129,12 +141,23 @@ hgroup a h1.menu_style img:hover{
 
 .pc_menu ul.menu_style a:hover{
   -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.2) 30%, #000 50%, rgba(0,0,0,.2) 70%);
+  mask-image: linear-gradient(-75deg, rgba(0,0,0,.2) 30%, #000 50%, rgba(0,0,0,.2) 70%);
   -webkit-mask-size: 200%;
+  mask-size: 200%;
   animation: shine 1.5s infinite;
   transition: all 0.1s;
 }
 
 @-webkit-keyframes shine{
+  from{
+    -webkit-mask-position: 150%;
+  }
+  to{
+    -webkit-mask-position:-50%;
+  }
+}
+
+@keyframes shine{
   from{
     -webkit-mask-position: 150%;
   }
@@ -217,8 +240,7 @@ hgroup a h1.menu_style img:hover{
 .m_menu{
   position: absolute;
   right: 0;
-  top: 80px;
-  top: 80px;
+  top: 70px;
   width: 100%;
   background-color: #000000d7;
   text-align: right;
