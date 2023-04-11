@@ -10,11 +10,13 @@ function scrollEvent(){
     });
 }
 
-function init(){
+scrollEvent();
+
+/* function init(){
     document.addEventListener("scroll", scrollEvent);
 }
 
-init();
+init(); */
 
 
 
